@@ -73,7 +73,7 @@ requireAll(req);
 ```
 
 #### tips
-You can modify `src/assets/sprite` in both vue.config.js and main.js to change the default sprite file.
+You can modify `src/assets/sprite` in both vue.config.js and main.js to change the default sprite folder.
 
 
 ## examples
