@@ -1,5 +1,10 @@
 ## yi-svg-sprite
-[![NPM version][version-img]][versions-img] [![Build status][ci-img]][ci-url] [![CodeClimate score][codeclimate-img]][codeclimate-url] [![Documentation score][docs-coverage-img]][docs-coverage-url] [![Dependencies status][deps-img]][deps-url] [![Dev dependencies status][dev-deps-img]][dev-deps-url] [![NPM downloads][downloads-img]][npm-url]
+<a href="https://www.npmjs.com/package/vue-performance">
+  <img src="https://img.shields.io/npm/v/vue-performance.svg" alt="NPM">
+</a>
+<a href="https://github.com/sishenhei7/vue-performance/blob/master/LICENSE">
+  <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="LICENSE">
+</a>
 
 `yi-svg-sprite` is used to build svg sprite in vue
 
