@@ -23,7 +23,7 @@ export default {
     },
     svgClass() {
       if (this.className) {
-        return `#yi-svg ${this.className}`;
+        return `yi-svg ${this.className}`;
       }
       return 'yi-svg';
     },
