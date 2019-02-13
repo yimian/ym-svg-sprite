@@ -37,7 +37,7 @@ module.exports = {
       .test(/\.svg$/)
       .oneOf('normal')
       .exclude
-        .add(resolve('src/assets/sprite'))
+        .add(resolve('src/assets/svg-sprite'))
         .end()
       .use('file-loader')
         .loader('file-loader')
@@ -45,7 +45,7 @@ module.exports = {
       .end()
       .oneOf('sprite')
       .include
-        .add(resolve('src/assets/sprite'))
+        .add(resolve('src/assets/svg-sprite'))
         .end()
       .use('svg-sprite-loader')
         .loader('svg-sprite-loader')
@@ -57,7 +57,7 @@ module.exports = {
 ```
 
 #### tips
-All your svg files should be placed under `src/assets/sprite` folder.
+All your svg files should be placed under `src/assets/svg-sprite` folder.
 
 ### main.js
 
@@ -68,12 +68,12 @@ import SvgSprite from 'yi-svg-sprite';
 
 Vue.use(SvgSprite);
 const requireAll = requireContext => requireContext.keys().map(requireContext);
-const req = require.context('./assets/sprite', false, /\.svg$/);
+const req = require.context('./assets/svg-sprite', false, /\.svg$/);
 requireAll(req);
 ```
 
 #### tips
-You can modify `src/assets/sprite` in both vue.config.js and main.js to change the default sprite folder.
+You can modify `src/assets/svg-sprite` in both vue.config.js and main.js to change the default sprite folder.
 
 
 ## examples
