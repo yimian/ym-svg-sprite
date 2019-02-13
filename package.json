@@ -1,5 +1,5 @@
 {
-  "name": "vue-svg-sprite",
+  "name": "yi-svg-sprite",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sishenhei7/vue-svg-sprite.git"
+    "url": "git+https://github.com/sishenhei7/yi-svg-sprite.git"
   },
-  "author": "",
+  "author": "sishenhei7",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sishenhei7/vue-svg-sprite/issues"
+    "url": "https://github.com/sishenhei7/yi-svg-sprite/issues"
   },
-  "homepage": "https://github.com/sishenhei7/vue-svg-sprite#readme"
+  "homepage": "https://github.com/sishenhei7/yi-svg-sprite#readme"
 }
