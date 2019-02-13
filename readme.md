@@ -1,3 +1,9 @@
 ## yi-svg-sprite
 
-svg-sprite for vue
+`yi-svg-sprite` is used to build svg sprite in vue
+
+## Install
+
+
+
+

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sishenhei7/yi-svg-sprite/issues"
   },
-  "homepage": "https://github.com/sishenhei7/yi-svg-sprite#readme"
+  "homepage": "https://github.com/sishenhei7/yi-svg-sprite#readme",
+  "devDependencies": {
+    "svg-sprite-loader": "^4.1.3"
+  }
 }
