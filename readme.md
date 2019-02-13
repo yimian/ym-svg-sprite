@@ -52,7 +52,7 @@ module.exports = {
         .options({
           symbolId: 'sprite-[name]'
         });
-  }
+  },
 };
 ```
 
