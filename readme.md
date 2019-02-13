@@ -1,9 +1,9 @@
 ## yi-svg-sprite
 
-<a href="https://www.npmjs.com/package/vue-performance">
-  <img src="https://img.shields.io/npm/v/vue-performance.svg" alt="NPM">
+<a href="https://www.npmjs.com/package/yi-svg-sprite">
+  <img src="https://img.shields.io/npm/v/yi-svg-sprite.svg" alt="NPM">
 </a>
-<a href="https://github.com/sishenhei7/vue-performance/blob/master/LICENSE">
+<a href="https://github.com/sishenhei7/yi-svg-sprite/blob/master/LICENSE">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="LICENSE">
 </a>
 
