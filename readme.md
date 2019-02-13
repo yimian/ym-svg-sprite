@@ -34,30 +34,44 @@ module.exports = {
     svgRule.uses.clear();
 
     svgRule
-      .test(/\.svg$/)
+      .test(/\.(svg)(\?.*)?$/)
+      .oneOf('name')
+        .include
+          .add(resolve('src/assets/sprite.svg'))
+          .end()
+        .use('file-loader')
+          .loader('file-loader')
+          .options({
+            name: 'img/[name].[hash:8].[ext]'
+          })
+          .end()
+        .end()
       .oneOf('normal')
-      .exclude
-        .add(resolve('src/assets/svg-sprite'))
+        .exclude
+          .add(resolve('src/assets/sprite'))
+          .end()
+        .use('file-loader')
+          .loader('file-loader')
+          .options({
+            name: 'img/[name].[hash:8].[ext]'
+          })
+          .end()
         .end()
-      .use('file-loader')
-        .loader('file-loader')
-        .end()
-      .end()
       .oneOf('sprite')
-      .include
-        .add(resolve('src/assets/svg-sprite'))
-        .end()
-      .use('svg-sprite-loader')
-        .loader('svg-sprite-loader')
-        .options({
-          symbolId: 'sprite-[name]'
-        });
+        .include
+          .add(resolve('src/assets/sprite'))
+          .end()
+        .use('svg-sprite-loader')
+          .loader('svg-sprite-loader')
+          .options({
+            symbolId: 'sprite-[name]'
+          });
   },
 };
 ```
 
 #### tips
-All your svg files should be placed under `src/assets/svg-sprite` folder.
+All your svg files should be placed under `src/assets/sprite` folder.
 
 ### main.js
 
@@ -68,12 +82,12 @@ import SvgSprite from 'yi-svg-sprite';
 
 Vue.use(SvgSprite);
 const requireAll = requireContext => requireContext.keys().map(requireContext);
-const req = require.context('./assets/svg-sprite', false, /\.svg$/);
+const req = require.context('./assets/sprite', false, /\.svg$/);
 requireAll(req);
 ```
 
 #### tips
-You can modify `src/assets/svg-sprite` in both vue.config.js and main.js to change the default sprite folder.
+You can modify `src/assets/sprite` in both vue.config.js and main.js to change the default sprite folder.
 
 
 ## examples
