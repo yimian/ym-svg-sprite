@@ -23,8 +23,7 @@ export default {
   },
   computed: {
     path() {
-      const svgPath = require(`${this.svgPath}`);
-      return `${svgPath}#${this.svgId}`;
+      return `${this.svgPath}#${this.svgId}`;
     },
     svgClass() {
       if (this.className) {
