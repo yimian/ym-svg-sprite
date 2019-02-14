@@ -11,7 +11,7 @@
 
 ## How
 
-This plugin uses 'file-loader' to load svg files, and uses 'svg-sprite-loader' to build svg sprite.
+This plugin uses 'file-loader' to load normal svg files, and uses 'svg-sprite-loader' to build svg sprite.
 
 Also, it uses 'svgo' and 'svgo-loader' to compress svg sprite.(It deletes the titles and annotations in svg)
 
