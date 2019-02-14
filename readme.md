@@ -1,13 +1,13 @@
-## yi-svg-sprite
+## ym-svg-sprite
 
-<a href="https://www.npmjs.com/package/yi-svg-sprite">
-  <img src="https://img.shields.io/npm/v/yi-svg-sprite.svg" alt="NPM">
+<a href="https://www.npmjs.com/package/ym-svg-sprite">
+  <img src="https://img.shields.io/npm/v/ym-svg-sprite.svg" alt="NPM">
 </a>
-<a href="https://github.com/sishenhei7/yi-svg-sprite/blob/master/LICENSE">
+<a href="https://github.com/sishenhei7/ym-svg-sprite/blob/master/LICENSE">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="LICENSE">
 </a>
 
-`yi-svg-sprite` is used to build svg sprite in vue
+`ym-svg-sprite` is used to build svg sprite in vue
 
 ## How
 
@@ -19,12 +19,12 @@ Also, it uses 'svgo' and 'svgo-loader' to compress svg sprite.(It deletes the ti
 
 ### install
 
-To begin, you'll need to install svg-sprite-loader and yi-svg-sprite:
+To begin, you'll need to install svg-sprite-loader and ym-svg-sprite:
 
 ```
 npm i svg-sprite-loader --save-dev
 npm i svgo svgo-loader --save-dev
-npm i yi-svg-sprite
+npm i ym-svg-sprite
 ```
 
 ### vue.config.js
@@ -92,10 +92,10 @@ All your svg files (to be built into svg sprite) should be placed under `src/ass
 
 ### main.js
 
-Finally, import yi-svg-sprite in your main.js:
+Finally, import ym-svg-sprite in your main.js:
 
 ```
-import SvgSprite from 'yi-svg-sprite';
+import SvgSprite from 'ym-svg-sprite';
 
 Vue.use(SvgSprite);
 const requireAll = requireContext => requireContext.keys().map(requireContext);
@@ -112,7 +112,7 @@ You can modify `src/assets/sprite` in both vue.config.js and main.js to change t
 You can use YiSvg as a vue component anywhere like this:
 
 ```
-<yi-svg svgId="haha" className="app-svg"/>
+<ym-svg svgId="haha" className="app-svg"/>
 ```
 
 #### tips

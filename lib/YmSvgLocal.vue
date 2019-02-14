@@ -1,14 +1,18 @@
 <template>
   <svg :class="svgClass" aria-hidden="true">
-    <use :xlink:href="svgName"></use>
+    <use :xlink:href="path"></use>
   </svg>
 </template>
 
 <script>
 export default {
-  name: 'YiSvg',
+  name: 'YmSvgLocal',
   props: {
-    svgId: {
+    svgPath: {
+      type: String,
+      required: true,
+    },
+    svgName: {
       type: String,
       required: true,
     },
@@ -18,14 +22,14 @@ export default {
     },
   },
   computed: {
-    svgName() {
-      return `#sprite-${this.svgId}`;
+    path() {
+      return `${this.svgPath}#${this.svgName}`;
     },
     svgClass() {
       if (this.className) {
-        return `yi-svg ${this.className}`;
+        return `#ym-svg ${this.className}`;
       }
-      return 'yi-svg';
+      return 'ym-svg';
     },
   },
 };

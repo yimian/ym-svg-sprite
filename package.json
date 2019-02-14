@@ -1,5 +1,5 @@
 {
-  "name": "yi-svg-sprite",
+  "name": "ym-svg-sprite",
   "version": "1.0.8",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sishenhei7/yi-svg-sprite.git"
+    "url": "git+https://github.com/sishenhei7/ym-svg-sprite.git"
   },
   "author": "sishenhei7",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sishenhei7/yi-svg-sprite/issues"
+    "url": "https://github.com/sishenhei7/ym-svg-sprite/issues"
   },
-  "homepage": "https://github.com/sishenhei7/yi-svg-sprite#readme",
+  "homepage": "https://github.com/sishenhei7/ym-svg-sprite#readme",
   "devDependencies": {
     "svg-sprite-loader": "^4.1.3"
   }
