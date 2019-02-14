@@ -112,11 +112,11 @@ You can modify `src/assets/sprite` in both vue.config.js and main.js to change t
 You can use YiSvg as a vue component anywhere like this:
 
 ```
-<ym-svg svgId="haha" className="app-svg"/>
+<ym-svg svgName="haha" className="app-svg"/>
 ```
 
 #### tips
-`svgId` is required, it is the name of your svg file.
+`svgName` is required, it is the name of your svg file.
 
 ## ToDo
 
