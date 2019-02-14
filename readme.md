@@ -9,6 +9,12 @@
 
 `yi-svg-sprite` is used to build svg sprite in vue
 
+## How
+
+This plugin uses 'file-loader' to load svg files, and uses 'svg-sprite-loader' to build svg sprite.
+
+Also, it uses 'svgo' and 'svgo-loader' to compress svg sprite.(It deletes the titles and annotations in svg)
+
 ## Getting Started
 
 ### install
@@ -17,6 +23,7 @@ To begin, you'll need to install svg-sprite-loader and yi-svg-sprite:
 
 ```
 npm i svg-sprite-loader --save-dev
+npm i svgo svgo-loader --save-dev
 npm i yi-svg-sprite
 ```
 
@@ -65,13 +72,23 @@ module.exports = {
           .loader('svg-sprite-loader')
           .options({
             symbolId: 'sprite-[name]'
+          })
+          .end()
+        .use('svgo-loader')
+          .loader('svgo-loader')
+          .options({
+            plugins: [
+              {removeTitle: true},
+              {convertColors: {shorthex: false}},
+              {convertPathData: false}
+            ]
           });
   },
 };
 ```
 
 #### tips
-All your svg files should be placed under `src/assets/sprite` folder.
+All your svg files (to be built into svg sprite) should be placed under `src/assets/sprite` folder.
 
 ### main.js
 
@@ -103,5 +120,5 @@ You can use YiSvg as a vue component anywhere like this:
 
 ## ToDo
 
-- implement `svgo` plugin.
-- change it to vue-cli3 plugin.
+- [x] implement `svgo` plugin.
+- [ ] change it to vue-cli3 plugin.
