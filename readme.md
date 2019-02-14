@@ -109,7 +109,7 @@ You can modify `src/assets/sprite` in both vue.config.js and main.js to change t
 
 ## examples
 
-You can use YiSvg as a vue component anywhere like this:
+You can use YmSvg as a vue component anywhere like this:
 
 ```
 <ym-svg svgName="haha" className="app-svg"/>
