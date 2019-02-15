@@ -19,11 +19,9 @@ Also, it uses 'svgo' and 'svgo-loader' to compress svg sprite.(It deletes the ti
 
 ### install
 
-To begin, you'll need to install svg-sprite-loader and ym-svg-sprite:
+To begin with, just install ym-svg-sprite:
 
 ```
-npm i svg-sprite-loader --save-dev
-npm i svgo svgo-loader --save-dev
 npm i ym-svg-sprite
 ```
 
