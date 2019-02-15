@@ -22,7 +22,7 @@ Also, it uses 'svgo' and 'svgo-loader' to compress svg sprite.(It deletes the ti
 To begin with, just install ym-svg-sprite:
 
 ```
-npm i ym-svg-sprite
+npm i ym-svg-sprite -s
 ```
 
 ### vue.config.js
