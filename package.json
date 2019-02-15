@@ -16,7 +16,7 @@
     "url": "https://github.com/sishenhei7/ym-svg-sprite/issues"
   },
   "homepage": "https://github.com/sishenhei7/ym-svg-sprite#readme",
-  "devDependencies": {
+  "dependencies": {
     "svg-sprite-loader": "^4.1.3"
   }
 }
